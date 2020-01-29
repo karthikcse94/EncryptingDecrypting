@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".SelectOperationType">
+
+   <Button
+       android:id="@+id/encryptBtnID"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/encrypt"
+       android:textAllCaps="false"
+       android:background="@drawable/button_background"
+       android:textColor="@color/whiteColor"
+       android:layout_margin="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/decryptBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decrypt"
+        android:textAllCaps="false"
+        android:background="@drawable/button_background"
+        android:textColor="@color/whiteColor"
+        android:layout_margin="@dimen/margin"/>
+
+</LinearLayout>

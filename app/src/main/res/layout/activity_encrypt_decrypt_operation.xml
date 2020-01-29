@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".EncryptDecryptOperation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/result" />
+
+        <EditText
+            android:id="@+id/resultEtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin"
+            android:background="@drawable/rectangle_border"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAutofill="no"
+            android:paddingVertical="@dimen/margin"
+            android:paddingStart="5dp"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields"
+            tools:targetApi="o" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/input_string" />
+
+        <EditText
+            android:id="@+id/inputStringEtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin"
+            android:background="@drawable/rectangle_border"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingVertical="@dimen/margin"
+            android:paddingStart="5dp"
+            tools:ignore="LabelFor,RtlSymmetry"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/submitBtnID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/button_background_disable"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            tools:targetApi="o" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
